@@ -1,0 +1,47 @@
+- silent bug
+
+niz[3] <=> p* + 3
+3[niz] <=> 3 + p*
+
+- kod da bude citljiv, razumljiv i zgodan za debugger
+
+- kad pokrenemo run i stignemo deo breakpoint-a to znaci da se ta linija treba tek izvrsiti
+
+- step = ono sto ce se prvo pozvati to ce se prvo izvrsiti  
+  => svaki put kada se pali mozak gube se poeni
+  => ne trebamo mnogo razmisljati o tome, to znaci da nesto ne valja
+
+
+BUDE OBAVEZNO:
+- obavezno sa pristupom, memorijama sa stekom
+- sa ekstenzijama
+- seg fault tako sto pristupa memoriji koja ne postoji
+  (sacuva u pokazivacu, pa vrati pokazivac: tako zamaskira gresku)
+
+- drugo bude sta bude
+------------------------------------------------------------------------------------
+
+* memcheck - za proveru memorije (sigurno dolazi na ispitu 2p)
+* hellgrigng - za tredove
+* callgrind - profajler
+
+- kako da uhvatimo curenje memorije: kako program radi, tako on polako pocinje da koci i koci..
+- za valgrind kompiliramo sa -g 
+
+  --leak-check=full : obavezno koristimo na ispitu, proverava bilo koje curenje memorije 
+  --show-leak-kinds=all : kada pomerimo pokazivac a ne oslobodimo memeoriju
+      definite : sigurno je curenje memorije
+      indirect : vi ste izgubili nesto sto je izgubilo nesto (zaboravimo scenu da oslobodimo)
+      possible : 
+  --track-origins=yes 
+  --log-file=[optput_file] : gde hocu da prosledim ovo sto ispise
+
+
+- moramo da razmislimo kada standardna biblioteka radi nesto, a kada mi nesto radimo
+  sto se tice memorije
+
+- u Qt treba voditi racuna o oslobadjanju memorije, jer je bas glup
+
+- valgrind sa GUI aplikacijama treba da pokrenemo nesto, da istestiramo slucaj upotrebe
+
+- realloc : je bas zeznut jer ne moze automatski da se oslobodi memorija 
