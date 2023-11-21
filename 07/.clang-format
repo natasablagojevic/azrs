@@ -1,0 +1,6 @@
+BasedOnStyle: LLVM
+IdentWidth: 1
+UseTab: Always
+BreakBeforeBraces: Linux 
+AllowShortIfStatementsOnASingleLine: false
+IdentCaseLabels: false

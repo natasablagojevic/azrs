@@ -1,0 +1,17 @@
+clang-tidy main.cpp --checks=perfomacne-inefficient-string-concatenation -- -std=c++20
+
+clang-tidy main.cpp --checks=llvm-namespace-comment --fix --std=c++20
+
+-----------------------------------------------------------------------
+
+clang-format:
+
+clang-format --style=Microsoft main.cpp -i (inplace izmena)
+
+------------------------------------------------------------------
+
+clang-tidy [input.cpp] --checks="modernize-*"
+
+clang-tidy old.cpp --checks="modernize-*" > log.txt
+
+run-clang-tidy -checks="modernize-*" -fix -header-filter="*" 
