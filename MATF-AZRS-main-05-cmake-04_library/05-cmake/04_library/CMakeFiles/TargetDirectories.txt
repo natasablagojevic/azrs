@@ -1,0 +1,4 @@
+/home/natasa/Desktop/Fakultet/4.god/7.sem/azrs/MATF-AZRS-main-05-cmake-04_library/05-cmake/04_library/CMakeFiles/string_library.dir
+/home/natasa/Desktop/Fakultet/4.god/7.sem/azrs/MATF-AZRS-main-05-cmake-04_library/05-cmake/04_library/CMakeFiles/run_test.dir
+/home/natasa/Desktop/Fakultet/4.god/7.sem/azrs/MATF-AZRS-main-05-cmake-04_library/05-cmake/04_library/CMakeFiles/edit_cache.dir
+/home/natasa/Desktop/Fakultet/4.god/7.sem/azrs/MATF-AZRS-main-05-cmake-04_library/05-cmake/04_library/CMakeFiles/rebuild_cache.dir

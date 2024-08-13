@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/run_test.dir/test.cpp.o -o run_test  libstring_library.a 
